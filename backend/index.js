@@ -24,6 +24,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const port = process.env.PORT || 5000;
 
 httpServer.listen(port, () => {
 	console.log(`Serve at http://localhost:${port}`);
