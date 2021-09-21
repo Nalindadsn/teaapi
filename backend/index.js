@@ -18,6 +18,12 @@ import uploadRouter from './routers/uploadRouter.js';
 // })
 
 
+dotenv.config();
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 httpServer.listen(port, () => {
 	console.log(`Serve at http://localhost:${port}`);
