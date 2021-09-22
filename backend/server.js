@@ -4,7 +4,7 @@ import data from './data.js';
 import userRouter from './routers/userRouter.js';
 
 const app = express();
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://nalindadsn:941151663Bandara@codeaddon.tmqu7.mongodb.net/teafactory?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   // useCreateIndex: true,
