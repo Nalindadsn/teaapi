@@ -8,7 +8,7 @@ const app = express();
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
+  // useCreateIndex: true,
 });
 
 app.get('/api/products/:id', (req, res) => {
